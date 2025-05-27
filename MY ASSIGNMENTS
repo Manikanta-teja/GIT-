@@ -92,7 +92,7 @@ git commit -m "Add new.txt in feature1 branch"
 6. Checkout to develop, unstash this file and commit
 
 git checkout develop
-git stash pop
+git stash 
 git add develop.txt
 git commit -m "Add develop.txt in develop branch"
 
