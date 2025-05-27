@@ -130,9 +130,10 @@ Tasks To Be Performed:
 mkdir myassign3
 cd my assign3
 git init
-git branch develop
-git branch f1
-git branch f2
+git checkout -b develop
+git checkout -b f1
+git checkout -b f2
+
 
 2. In the master branch, commit main.txt file
 
