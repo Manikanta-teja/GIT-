@@ -175,6 +175,9 @@ git push -u origin develop
 git push -u origin f1
 git push -u origin f2
 
+git push --all origin      #use this better than pushing one-by-one
+
+
 5. On local delete f2 branch
 
 git branch -d f2
@@ -202,6 +205,7 @@ Tasks To Be Performed:
 
 1. Put master.txt on master branch, stage and commit
 
+git init
 git checkout master
 echo "This is master.txt" > master.txt
 git add master.txt
