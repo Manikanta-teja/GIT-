@@ -137,9 +137,10 @@ git checkout -b f2
 
 2. In the master branch, commit main.txt file
 
-git checkout master
+git checkout -b master
 echo "This is the main branch file." > main.txt
 git add main.txt
+git config --global user.name "YOUR NAME"
 git commit -m "Add main.txt to master"
 
 3. Put develop.txt in develop branch, f1.txt and f2.txt in f1 and f2 respectively
@@ -149,6 +150,7 @@ A.Switch to the develop branch and add develop.txt
 git checkout develop
 echo "This is the develop file." > develop.txt
 git add develop.txt
+git config --global user.name "YOUR NAME"
 git commit -m "Add develop.txt"
 
 B.Switch to the f1 branch and add f1.txt
@@ -168,7 +170,6 @@ git commit -m "Add f2.txt"
 4. Push all these branches to GitHub
 
 git remote add origin https://github.com/your-username/your-repo.git
-git checkout master
 git push -u origin master
 git push -u origin develop
 git push -u origin f1
