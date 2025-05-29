@@ -205,6 +205,9 @@ Tasks To Be Performed:
 
 1. Put master.txt on master branch, stage and commit
 
+
+mkdir assign4
+cd assign4
 git init
 git checkout master
 echo "This is master.txt" > master.txt
@@ -231,6 +234,11 @@ git merge public1
 
 5. Merge public 2 on master branch
 
+git checkout -b public2
+echo "This is pub2.txt">public.txt
+git add public2.txt
+git commit -m "Add pub2.txt"
+git checkout master
 git merge public2 
 
 6. Edit master.txt on private branch, stage and commit
