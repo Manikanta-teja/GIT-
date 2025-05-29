@@ -130,9 +130,6 @@ Tasks To Be Performed:
 mkdir myassign3
 cd my assign3
 git init
-git checkout -b develop
-git checkout -b f1
-git checkout -b f2
 
 
 2. In the master branch, commit main.txt file
@@ -147,7 +144,7 @@ git commit -m "Add main.txt to master"
 
 A.Switch to the develop branch and add develop.txt
 
-git checkout develop
+git checkout -b develop
 echo "This is the develop file." > develop.txt
 git add develop.txt
 git config --global user.name "YOUR NAME"
@@ -155,14 +152,14 @@ git commit -m "Add develop.txt"
 
 B.Switch to the f1 branch and add f1.txt
 
-git checkout f1
+git checkout -b f1
 echo "This is the f1 file." > f1.txt
 git add f1.txt
 git commit -m "Add f1.txt"
 
 C.Switch to the f2 branch and add f2.txt
 
-git checkout f2
+git checkout -b f2
 echo "This is the f2 file." > f2.txt
 git add f2.txt
 git commit -m "Add f2.txt"
@@ -170,17 +167,22 @@ git commit -m "Add f2.txt"
 4. Push all these branches to GitHub
 
 git remote add origin https://github.com/your-username/your-repo.git
+
 git push -u origin master
 git push -u origin develop
 git push -u origin f1
 git push -u origin f2
+   
+       #OR
 
 git push --all origin      #use this better than pushing one-by-one
 
 
 5. On local delete f2 branch
 
-git branch -d f2
+git branch    #check in branch you are
+git checkout master    # If you are in f2 then use this command to switch to master branch
+git branch -D f2
 
 6. Delete the same branch on GitHub as well
 
