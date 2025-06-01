@@ -49,7 +49,7 @@ git config --global user.email " "
 git commit -m " "
 git remote add origin "  "
 git fetch origin
-git rebasse origin main
+git rebase origin main
 git push origin main
 _______________________________________________________________________________________________________________________
 ASSIGNMENT 2
