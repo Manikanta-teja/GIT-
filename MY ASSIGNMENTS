@@ -36,20 +36,21 @@ git commit -m "Added Code.txt and Output.txt"
 e. And finally push them to GitHub
 
 git remote add origin https://github.com/yourusername/yourreponame.git
+git branch -M main
 git fetch origin
-git rebase origin main
 git push  origin main
 
 2. Please share the commands for above points
 
+git --version
 git init
-git add 
 git config --global user.name "  "
 git config --global user.email " "
+git add 
 git commit -m " "
 git remote add origin "  "
+git branch -M main
 git fetch origin
-git rebase origin main
 git push origin main
 _______________________________________________________________________________________________________________________
 ASSIGNMENT 2
